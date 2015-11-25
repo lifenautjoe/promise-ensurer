@@ -1,12 +1,14 @@
 {
   "name": "promise-ensurer",
-  "version": "0.0.0",
-  "description": "",
-  "license": "",
-  "repository": "",
-  "author": "",
+  "version": "0.0.1",
+  "description": "Ensures that a value is a promise",
+  "license": "MIT",
+  "repository": "https://github.com/thefabulousdev/promise-ensurer",
+  "author": "Joel Hernandez",
   "keywords": [
-    ""
+    "promise",
+    "ensure-promise",
+    "promise utilities"
   ],
   "files": [
     "lib"
@@ -14,7 +16,9 @@
   "scripts": {
     "test": "gulp test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^3.10.1"
+  },
   "devDependencies": {
     "del": "2.0.2",
     "gulp": "^3.9.0",
