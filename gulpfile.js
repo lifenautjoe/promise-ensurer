@@ -2,12 +2,12 @@ var gulp = require('gulp');
 var tslint = require('gulp-tslint');
 var exec = require('child_process').exec;
 var jasmine = require('gulp-jasmine');
-var gulp = require('gulp-help')(gulp);
 var tsconfig = require('gulp-tsconfig-files');
 var path = require('path');
 var inject = require('gulp-inject');
 var gulpSequence = require('gulp-sequence');
 var del = require('del');
+gulp = require('gulp-help')(gulp);
 
 var typeDefsPath = (function (tsd) {
   return tsd.path || 'typings';
@@ -58,5 +58,7 @@ gulp.task('build', 'Compiles all TypeScript source files and updates module refe
 
 gulp.task('test', 'Runs the Jasmine test specs', ['build'], function () {
   return gulp.src('test/*.js')
-    .pipe(jasmine());
+    .pipe(jasmine({
+        verbose : true
+    }));
 });
