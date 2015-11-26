@@ -1,6 +1,4 @@
 promise-ensurer
-===============
-
 --------
 Motivation
 --------
