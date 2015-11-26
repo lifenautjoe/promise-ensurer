@@ -8,7 +8,7 @@ To provide it's users a way to handle different types of values as a promise.
     npm install promise-ensurer
 
 ##Notes
- - The returned promises are **[bluebird](http://bluebirdjs.com/)** promises 
+ - The generated promises are **[bluebird](http://bluebirdjs.com/)** promises 
 
 ##Usage
 
@@ -26,6 +26,9 @@ PromiseEnsurer.ensure(false);
 
 // Returns a promise which will be resolved with the given object
 PromiseEnsurer.ensure({ name : 'Joe'});
+
+// Returns the same given promise
+PromiseEnsurer.ensure(someGivenPromise);
 ```
 
 ## Run Tests
