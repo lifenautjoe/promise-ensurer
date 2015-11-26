@@ -4,7 +4,7 @@ Promise.config({
     warnings : false
 });
 
-var PromiseEnsurer = require('../lib/promise-ensurer');
+var PromiseEnsurer = require('../lib');
 
 describe('Promise ensurer', function () {
 
