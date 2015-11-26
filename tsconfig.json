@@ -11,6 +11,7 @@
     "src/**/*.ts"
   ],
   "files": [
+    "src/index.ts",
     "src/promise-ensurer.ts"
   ]
 }
