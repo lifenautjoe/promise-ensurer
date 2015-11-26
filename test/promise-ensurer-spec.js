@@ -72,4 +72,19 @@ describe('Promise ensurer', function () {
             });
         })
     });
+
+    describe('when receiving a promise', function () {
+
+        var deathStarPromise;
+
+        beforeEach(function () {
+            deathStarPromise = new Promise(function(){});
+        });
+
+        it('should return the received promise', function () {
+            var result = PromiseEnsurer.ensure(deathStarPromise);
+            expect(result).toEqual(deathStarPromise);
+        })
+
+    })
 });
