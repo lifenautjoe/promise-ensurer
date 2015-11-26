@@ -19,9 +19,10 @@ class PromiseEnsurer {
     static VALUE_IS_FALSE_ERROR_MESSAGE = 'Value was false';
 
     /**
+     * Checks whether the given value is a promise
      *
-     * @param value
-     * @returns {boolean|boolean}
+     * @param {*} value
+     * @returns {boolean}
      */
     static isPromise(value : any) : boolean {
         return IsPromise(value);
@@ -38,7 +39,7 @@ class PromiseEnsurer {
             if (_.isUndefined(value)) {
                 reject(new Error(this.UNDEFINED_ERROR_MESSAGE));
             } else if (_.isBoolean(value)) {
-                // TODO : The Promise type definitions require a value on both functions
+                // The Promise type definitions require a value on both functions
                 value ? resolve(undefined) : reject(undefined);
             } else {
                 resolve(value);
@@ -46,6 +47,12 @@ class PromiseEnsurer {
         });
     }
 
+    /**
+     * Ensures that a value is a promise
+     *
+     * @param {*} value
+     * @returns {Promise<*>}
+     */
     static ensure(value : any) {
         return this.isPromise(value) ? value : this.transformToPromise(value);
     }
