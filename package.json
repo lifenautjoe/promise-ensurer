@@ -3,7 +3,10 @@
     "version": "0.0.1",
     "description": "Ensures that a value is a promise",
     "license": "MIT",
-    "repository": "https://github.com/thefabulousdev/promise-ensurer",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thefabulousdev/promise-ensurer"
+    },
     "author": {
         "name": "Joel Levi Hernandez Fernandez",
         "email": "involvmnt@gmail.com"
