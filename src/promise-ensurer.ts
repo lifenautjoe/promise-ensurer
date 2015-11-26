@@ -14,10 +14,6 @@ import IsPromise = require('is-promise');
 
 class PromiseEnsurer {
 
-    static UNDEFINED_ERROR_MESSAGE = 'Value is undefined';
-
-    static VALUE_IS_FALSE_ERROR_MESSAGE = 'Value was false';
-
     /**
      * Checks whether the given value is a promise
      *
@@ -37,7 +33,7 @@ class PromiseEnsurer {
     static transformToPromise(value : any) : Promise<any> {
         return new Promise((resolve, reject) => {
             if (_.isUndefined(value)) {
-                reject(new Error(this.UNDEFINED_ERROR_MESSAGE));
+                reject(undefined);
             } else if (_.isBoolean(value)) {
                 // The Promise type definitions require a value on both functions
                 value ? resolve(undefined) : reject(undefined);
