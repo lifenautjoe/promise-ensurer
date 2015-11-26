@@ -1,20 +1,16 @@
 #promise-ensurer
---------
+
 ##Motivation
---------
 To provide it's users a way to handle different types of values as a promise.
 
 ##Installation
---------
 
     npm install promise-ensurer
 
 ##Notes
---------
  - The returned promises are **[bluebird](http://bluebirdjs.com/)** promises 
 
 ##Usage
---------
 
 ```js
 var PromiseEnsurer = require('promise-ensurer');
