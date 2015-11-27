@@ -1,4 +1,4 @@
-# promise-ensurer
+![promise-ensurer](http://oi64.tinypic.com/10oe0ld.jpg)
 
 [![NPM](https://nodei.co/npm/promise-ensurer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/promise-ensurer/)
 
