@@ -17,22 +17,22 @@ To provide it's users a way to handle different types of values as a promise.
 ## Usage
 
 ```js
-var PromiseEnsurer = require('promise-ensurer');
+var promiseEnsurer = require('promise-ensurer');
 
 // Returns a promise which will be rejected
-PromiseEnsurer.ensure();
+promiseEnsurer.ensure();
 
 // Returns a promise which will be resolved
-PromiseEnsurer.ensure(true); 
+promiseEnsurer.ensure(true); 
 
 // Returns a promise which will be rejected
-PromiseEnsurer.ensure(false);
+promiseEnsurer.ensure(false);
 
 // Returns a promise which will be resolved with the given object
-PromiseEnsurer.ensure({ name : 'Joe'});
+promiseEnsurer.ensure({ name : 'Joe'});
 
 // Returns the same given promise
-PromiseEnsurer.ensure(someGivenPromise);
+promiseEnsurer.ensure(someGivenPromise);
 ```
 
 ## Run Tests
