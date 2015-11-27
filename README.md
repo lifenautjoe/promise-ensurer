@@ -1,6 +1,7 @@
 # promise-ensurer
 
 [![Build Status](https://travis-ci.org/thefabulousdev/promise-ensurer.svg?branch=master)](https://travis-ci.org/thefabulousdev/promise-ensurer)[![dependencies](https://david-dm.org/thefabulousdev/promise-ensurer.svg)](https://david-dm.org/thefabulousdev/promise-ensurer)
+[![NPM](https://nodei.co/npm/promise-ensurer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/promise-ensurer/)
 
 ## Motivation
 To provide it's users a way to handle different types of values as a promise.
