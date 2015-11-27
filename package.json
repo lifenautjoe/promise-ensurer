@@ -1,6 +1,6 @@
 {
   "name": "promise-ensurer",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Ensures that a value is a promise",
   "license": "MIT",
   "repository": {
