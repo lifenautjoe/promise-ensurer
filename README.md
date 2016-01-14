@@ -1,35 +1,38 @@
-promise-ensurer
---------
-Motivation
---------
+![promise-ensurer](http://oi64.tinypic.com/10oe0ld.jpg)
+
+[![NPM](https://nodei.co/npm/promise-ensurer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/promise-ensurer/)
+
+[![Build Status](https://travis-ci.org/thefabulousdev/promise-ensurer.svg?branch=master)](https://travis-ci.org/thefabulousdev/promise-ensurer)[![dependencies](https://david-dm.org/thefabulousdev/promise-ensurer.svg)](https://david-dm.org/thefabulousdev/promise-ensurer)
+
+## Motivation
 To provide it's users a way to handle different types of values as a promise.
 
-Installation
---------
+## Installation
 
     npm install promise-ensurer
 
-Notes
---------
- - The returned promises are **[bluebird](http://bluebirdjs.com/)** promises 
+## Notes
+ - The generated promises are **[bluebird](http://bluebirdjs.com/)** promises 
 
-Usage
---------
+## Usage
 
 ```js
-var PromiseEnsurer = require('promise-ensurer');
+var promiseEnsurer = require('promise-ensurer');
 
 // Returns a promise which will be rejected
-PromiseEnsurer.ensure();
+promiseEnsurer.ensure();
 
 // Returns a promise which will be resolved
-PromiseEnsurer.ensure(true); 
+promiseEnsurer.ensure(true); 
 
 // Returns a promise which will be rejected
-PromiseEnsurer.ensure(false);
+promiseEnsurer.ensure(false);
 
 // Returns a promise which will be resolved with the given object
-PromiseEnsurer.ensure({ name : 'Joe'});
+promiseEnsurer.ensure({ name : 'Joe'});
+
+// Returns the same given promise
+promiseEnsurer.ensure(someGivenPromise);
 ```
 
 ## Run Tests
